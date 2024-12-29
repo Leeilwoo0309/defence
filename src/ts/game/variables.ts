@@ -1,8 +1,20 @@
+const body: HTMLElement = document.body;
 /** Slot 상위 Div */
 const slotParentDiv: HTMLDivElement | null = document.querySelector('#slot');
 
 // 상수 선언하는데
 const slotSize: number = 100;
+
+// 카메라 관련
+let cameraPosition: Position = { x: 0, y: 0 };
+
+// 키 관련
+let keyDown: { [ket in string]: boolean } = {
+    w: false,
+    a: false,
+    s: false,
+    d: false,
+};
 
 const slots: Slot[] = [
     new SlotBuilder().setPosition({ x: 200, y: 215 }).build(),

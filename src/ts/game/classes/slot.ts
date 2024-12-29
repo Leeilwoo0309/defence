@@ -1,5 +1,6 @@
 class Slot {
     public position: Position = { x: 0, y: 0 };
+    public selector: HTMLDivElement | undefined = undefined;
 
     /** 빌드 시 실행 */
     public build() {
@@ -11,17 +12,24 @@ class Slot {
 
         slotParentDiv?.appendChild(newSlot);
 
+        this.selector = newSlot;
+
         setInterval(() => {
             this.update();
         }, 16);
 
-        newSlot.addEventListener('click', () => {
+        this.selector.addEventListener('click', () => {
             this.onClick();
         });
     }
 
     /** 초당 60회 실행할 코드 */
-    public update() {}
+    public update() {
+        if (this.selector instanceof HTMLDivElement) {
+            this.selector.style.top = `${this.position.y - slotSize / 2 - cameraPosition.y}px`;
+            this.selector.style.left = `${this.position.x - slotSize / 2 - cameraPosition.x}px`;
+        }
+    }
 
     /** 클릭시 실행할거 */
     public onClick() {}
