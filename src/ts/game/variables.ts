@@ -7,6 +7,7 @@ const slotSize: number = 100;
 
 // 카메라 관련
 let cameraPosition: Position = { x: 0, y: 0 };
+let cameraSpeed: number = 5;
 
 // 키 관련
 let keyDown: { [ket in string]: boolean } = {

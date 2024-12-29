@@ -21,25 +21,3 @@
     width: var(--road-width);
     height: 350px;
 }
-
-#road2 {
-    top: 450px;
-}
-
-#road3 {
-    top: 800px;
-}
-
-#road4 {
-    left: 1532px;
-}
-
-#road5 {
-    top: 458px;
-    height: 350px;
-}
-
-#road6 {
-    top: 800px;
-    left: 1532px;
-}

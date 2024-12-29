@@ -14,10 +14,6 @@ class Slot {
 
         this.selector = newSlot;
 
-        setInterval(() => {
-            this.update();
-        }, 16);
-
         this.selector.addEventListener('click', () => {
             this.onClick();
         });
