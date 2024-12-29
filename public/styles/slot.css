@@ -1,0 +1,15 @@
+:root {
+    --slot-size: 100px;
+}
+
+.slot {
+    position: absolute;
+
+    height: var(--slot-size);
+    width: var(--slot-size);
+
+    border: 5px solid black;
+    border-radius: 100%;
+
+    background: linear-gradient(120deg, rgb(59, 59, 59), rgb(29, 29, 29));
+}

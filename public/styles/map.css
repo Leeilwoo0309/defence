@@ -1,0 +1,45 @@
+:root {
+    --road-width: 8px;
+}
+
+.map {
+    margin: 100px;
+}
+
+.road {
+    position: absolute;
+
+    background-color: #181818;
+}
+
+.road-temp1 {
+    width: 1440px;
+    height: var(--road-width);
+}
+
+.road-temp2 {
+    width: var(--road-width);
+    height: 350px;
+}
+
+#road2 {
+    top: 450px;
+}
+
+#road3 {
+    top: 800px;
+}
+
+#road4 {
+    left: 1532px;
+}
+
+#road5 {
+    top: 458px;
+    height: 350px;
+}
+
+#road6 {
+    top: 800px;
+    left: 1532px;
+}

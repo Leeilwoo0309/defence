@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "module": "ESNext",
+        "rootDir": "./src/ts",
+        "outDir": "./src/js",
+        "moduleResolution": "Node",
+        "strict": true
+    },
+    "exclude": ["node_modules"]
+}
